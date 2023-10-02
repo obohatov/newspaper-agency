@@ -5,6 +5,12 @@ from django.views import generic
 
 
 from agency.models import Topic, Redactor, Newspaper
+from agency.forms import (
+    NewspaperSearchForm,
+    TopicSearchForm,
+    RedactorForm,
+    RedactorSearchForm,
+)
 
 
 def index(request):

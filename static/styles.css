@@ -1,0 +1,10 @@
+.content {
+    background-color: #dadada;
+    border: 2px solid grey;
+    margin: 25px;
+}
+
+.nav-element {
+    margin: 30px;
+    color: white;
+}
