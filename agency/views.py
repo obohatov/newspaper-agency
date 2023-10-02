@@ -48,18 +48,18 @@ class TopicListView(generic.ListView):
 class TopicCreateView(LoginRequiredMixin, generic.CreateView):
     model = Topic
     fields = "__all__"
-    success_url = reverse_lazy("news:topic-list")
+    success_url = reverse_lazy("agency:topic-list")
 
 
 class TopicUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Topic
     fields = "__all__"
-    success_url = reverse_lazy("news:topic-list")
+    success_url = reverse_lazy("agency: topic-list")
 
 
 class TopicDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Topic
-    success_url = reverse_lazy("news:topic-list")
+    success_url = reverse_lazy("agency:topic-list")
 
 
 class TopicDetailView(LoginRequiredMixin, generic.DetailView):
@@ -93,19 +93,19 @@ class RedactorListView(generic.ListView):
 
 class RedactorCreateView(generic.CreateView):
     model = Redactor
-    success_url = reverse_lazy("news:index")
+    success_url = reverse_lazy("agency:index")
     form_class = RedactorForm
 
 
 class RedactorUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Redactor
-    success_url = reverse_lazy("news:redactor-list")
+    success_url = reverse_lazy("agency:redactor-list")
     form_class = RedactorForm
 
 
 class RedactorDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Redactor
-    success_url = reverse_lazy("news:redactor-list")
+    success_url = reverse_lazy("agency:redactor-list")
 
 
 class RedactorDetailView(LoginRequiredMixin, generic.DetailView):
@@ -138,18 +138,18 @@ class NewspapersListView(generic.ListView):
 class NewspapersCreateView(LoginRequiredMixin, generic.CreateView):
     model = Newspaper
     fields = "__all__"
-    success_url = reverse_lazy("news:newspaper-list")
+    success_url = reverse_lazy("agency:newspaper-list")
 
 
 class NewspaperUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Newspaper
     fields = "__all__"
-    success_url = reverse_lazy("news:newspaper-list")
+    success_url = reverse_lazy("agency:newspaper-list")
 
 
 class NewspaperDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Newspaper
-    success_url = reverse_lazy("news:newspaper-list")
+    success_url = reverse_lazy("agency:newspaper-list")
 
 
 class NewspaperDetailView(LoginRequiredMixin, generic.DetailView):
