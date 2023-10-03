@@ -1,15 +1,15 @@
 {% load static %}
-<div class="topnav">
+<div class="top-nav">
   <img src="{% static 'favicon.png' %}" alt="" style="height: 25px; width: 25px" class="float-left">
-  <a href="{% url 'news:index' %}" class="nav-element">Home</a>
-  <a href="{% url 'news:topic-list' %}" class="nav-element">Topics</a>
-  <a href="{% url 'news:redactor-list' %}" class="nav-element">Redactors</a>
-  <a href="{% url 'news:newspaper-list' %}" class="nav-element">Newspapers</a>
+  <a href="{% url 'agency:index' %}" class="nav-element">Home</a>
+  <a href="{% url 'agency:topic-list' %}" class="nav-element">Topics</a>
+  <a href="{% url 'agency:redactor-list' %}" class="nav-element">Redactors</a>
+  <a href="{% url 'agency:newspaper-list' %}" class="nav-element">Newspapers</a>
   {% if user.is_authenticated  %}
-    <a href="{% url 'news:redactor-detail' pk=user.id %}" class="nav-element">My profile</a>
+    <a href="{% url 'agency:redactor-detail' pk=user.id %}" class="nav-element">My profile</a>
     <a href="{% url 'logout' %}" class="nav-element">Logout</a>
   {% else %}
-     <a href="{% url 'news:redactor-create' %}" class="nav-element">Sign up</a>
+     <a href="{% url 'agency:redactor-create' %}" class="nav-element">Sign up</a>
     <a href="{% url 'login' %}" class="nav-element">Log in</a>
   {% endif %}
 </div>
