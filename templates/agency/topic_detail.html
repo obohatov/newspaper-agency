@@ -6,7 +6,7 @@
       {% for newspaper in topic.newspaper.all %}
         <li>
           {{ newspaper.title }} -
-          <a href="{% url 'news:newspaper-detail' pk=newspaper.id %}">
+          <a href="{% url 'agency:newspaper-detail' pk=newspaper.id %}">
             More information about this...
         </a>
         </li>
