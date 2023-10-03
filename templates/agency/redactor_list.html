@@ -4,6 +4,9 @@
   <div class="content-details">
     <h1 style="text-align: center;">
       Redactors list
+      <a href="{% url 'agency:redactor-create' %}" class="float-right btn btn-primary">
+        Create new
+      </a>
     </h1>
     <form action="" method="get" class="form-inline">
       {{ search_form|crispy }}
@@ -30,7 +33,7 @@
               <td>{{ redactor.years_of_experience }}</td>
               <td>{{ redactor.workplace }}</td>
               <td>{{ redactor.newspapers.all.count }}</td>
-              <td><a href="{% url 'news:redactor-detail' pk=redactor.id %}">See more information</a></td>
+              <td><a href="{% url 'agency:redactor-detail' pk=redactor.id %}">See more information</a></td>
             </tr>
           {% endfor %}
         </tbody>

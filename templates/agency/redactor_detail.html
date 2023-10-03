@@ -2,8 +2,8 @@
 {% block content %}
   <div class="content-details">
   {% if user.id == redactor.id or user.is_staff %}
-    <a href="{% url 'news:redactor-update' pk=redactor.id %}" class="btn btn-primary float-right">Update information</a>
-    <a href="{% url 'news:redactor-delete' pk=redactor.id %}" class="btn btn-danger float-right">Delete user</a>
+    <a href="{% url 'agency:redactor-update' pk=redactor.id %}" class="btn btn-primary float-right">Update information</a>
+    <a href="{% url 'agency:redactor-delete' pk=redactor.id %}" class="btn btn-danger float-right">Delete user</a>
   {% endif %}
     <p>username - {{ redactor.username }}</p>
     <p>first name - {{ redactor.first_name }}</p>
@@ -13,7 +13,7 @@
           {% for newspaper in redactor.newspapers.all %}
         <li>
           {{ newspaper.title }} -
-          <a href="{% url 'news:newspaper-detail' pk=newspaper.id %}">
+          <a href="{% url 'agency:newspaper-detail' pk=newspaper.id %}">
             More information about this...        </a>
         </li>
       {% endfor %}

@@ -1,22 +1,24 @@
 body {
     margin-top: 20px;
     background-image: url("background.png");
+    background-size: cover;
 }
 
 .content {
-    background-color: #dadada;
+    background-color: lightskyblue;
     border: 2px solid grey;
     margin: 25px;
 }
 
 .nav-element {
+
     margin: 30px;
     color: white;
 }
 
 .top-nav {
     text-align: center;
-    background-color: #5a5a54;
+    background-color: dodgerblue;
     margin: 20px;
     padding: 10px;
     border-radius: 15px;

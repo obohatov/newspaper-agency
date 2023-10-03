@@ -4,7 +4,7 @@
   <div class="content-details">
     <h1 style="text-align: center;">
       Newspapers list
-      <a href="{% url 'news:newspaper-create' %}" class="float-right btn btn-primary">
+      <a href="{% url 'agency:newspaper-create' %}" class="float-right btn btn-primary">
         Create new
       </a>
     </h1>
@@ -28,7 +28,7 @@
           <td>{{ newspaper.title }}</td>
           <td>{{ newspaper.published_date }}</td>
           <td>{{ newspaper.topic }}</td>
-          <td><a href="{% url 'news:newspaper-detail' pk=newspaper.id %}">Read newspaper</a></td>
+          <td><a href="{% url 'agency:newspaper-detail' pk=newspaper.id %}">Read newspaper</a></td>
         </tr>
       {% endfor %}
         </tbody>
