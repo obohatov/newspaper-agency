@@ -27,7 +27,12 @@
         <tr>
           <td>{{ newspaper.title }}</td>
           <td>{{ newspaper.published_date }}</td>
-          <td>{{ newspaper.topic }}</td>
+          <td>
+            {% for topic in newspaper.topics.all %}
+              {{ topic.name }}
+              {% if not forloop.last %}, {% endif %}
+            {% endfor %}
+          </td>
           <td><a href="{% url 'agency:newspaper-detail' pk=newspaper.id %}">Read newspaper</a></td>
         </tr>
       {% endfor %}

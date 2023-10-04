@@ -7,8 +7,12 @@ NAMS is built on a robust database structure that efficiently stores and retriev
 ![img_2.png](img_2.png)
 
 # Additional Features
-An optional feature that can be added to this system is the ability to assign more than one topic to each newspaper. This would allow for a broader range of news coverage and provide readers with a more diverse selection of news.
+An optional feature that was added to this system is the ability to assign more than one topic to each newspaper. This would allow for a broader range of news coverage and provide readers with a more diverse selection of news.
 
 This project showcases the application of efficient system design and implementation.
 
 Please feel free to explore the code and provide any feedback. 
+
+Superuser:
+login: admin
+password: olehbohatov

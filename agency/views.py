@@ -7,6 +7,7 @@ from django.views import generic
 from agency.models import Topic, Redactor, Newspaper
 from agency.forms import (
     NewspaperSearchForm,
+    NewspaperForm,
     TopicSearchForm,
     RedactorForm,
     RedactorSearchForm,
@@ -137,13 +138,13 @@ class NewspapersListView(generic.ListView):
 
 class NewspapersCreateView(LoginRequiredMixin, generic.CreateView):
     model = Newspaper
-    fields = "__all__"
+    form_class = NewspaperForm
     success_url = reverse_lazy("agency:newspaper-list")
 
 
 class NewspaperUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Newspaper
-    fields = "__all__"
+    form_class = NewspaperForm
     success_url = reverse_lazy("agency:newspaper-list")
 
 
