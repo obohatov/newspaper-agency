@@ -1,0 +1,47 @@
+body {
+    margin-top: 20px;
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+.content {
+    background-color: lightskyblue;
+    border: 2px solid grey;
+    margin: 25px;
+}
+
+.nav-element {
+
+    margin: 30px;
+    color: white;
+}
+
+.top-nav {
+    text-align: center;
+    background-color: dodgerblue;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #000000;
+}
+
+.float-right {
+    margin-right: 20px;
+}
+
+.content-details {
+    margin: 20px;
+}
+
+.page-item {
+     text-align: center;
+}
+
+.next-page {
+    padding-right: 23px;
+    padding-left: 23px;
+}
+
+.btn {
+    margin: 10px;
+}
